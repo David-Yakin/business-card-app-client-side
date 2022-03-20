@@ -10,6 +10,7 @@ class CreateCard extends Form {
   state = {
     data: {
       title: "",
+      subTitle: "",
       description: "",
       address: "",
       phone: "",
@@ -22,6 +23,7 @@ class CreateCard extends Form {
 
   schema = {
     title: Joi.string().min(2).max(256).required().label("Title"),
+    subTitle: Joi.string().min(2).max(256).required().label("Subtitle"),
     description: Joi.string().min(2).max(1024).required().label("Description"),
     address: Joi.string().min(2).required().max(256).label("Address"),
     phone: Joi.string()
@@ -70,6 +72,7 @@ class CreateCard extends Form {
               method="POST"
               className="col-12 col-md-10 col-xl-6 border p-2 bg-white">
               {this.renderInput("title", "Title")}
+              {this.renderInput("subTitle", "Subtitle")}
               {this.renderTextarea("description", "Description")}
               {this.renderInput("address", "Address")}
               {this.renderInput("phone", "Phone")}
