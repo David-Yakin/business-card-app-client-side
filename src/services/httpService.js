@@ -2,8 +2,6 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { getJWT } from "./userService";
 
-// axios.defaults.headers.common["x-auth-token"] = getJWT();
-
 axios.interceptors.request.use(
   data => {
     axios.defaults.headers.common["x-auth-token"] = getJWT();

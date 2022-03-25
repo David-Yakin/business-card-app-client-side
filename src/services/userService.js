@@ -11,15 +11,6 @@ export const login = async user => {
   localStorage.setItem("token", token);
 };
 
-// export const getCurrentUser = () => {
-//   try {
-//     const token = getJWT();
-//     return JWTDecode(token);
-//   } catch {
-//     return null;
-//   }
-// };
-
 export const getCurrentUser = () => {
   try {
     const token = localStorage.getItem("token");
