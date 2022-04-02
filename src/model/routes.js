@@ -1,23 +1,12 @@
 const ROUTES = {
-  ROOT: "ROOT",
-  ABOUT: "ABOUT",
-  BIZ_SIGNUP: "BIZ_SIGNUP",
-  LOGOUT: "LOGOUT",
-  MY_CARDS: "MY_CARDS",
-  MY_FAV_CARDS: "MY_FAV_CARDS",
-  LOGIN: "LOGIN",
-  SIGNUP: "SIGNUP",
+  ROOT: { to: "/", label: "Home" },
+  ABOUT: { to: "/about", label: "About" },
+  BIZ_SIGNUP: { to: "/biz-signup", label: "Business Signup" },
+  LOGOUT: { to: "/logout", label: "Logout" },
+  MY_CARDS: { to: "/my-cards", label: "My Cards" },
+  MY_FAV_CARDS: { to: "/my-fav-cards", label: "My Favorite Cards" },
+  LOGIN: { to: "/login", label: "Login" },
+  SIGNUP: { to: "/signup", label: "Signup" },
 };
 
-const ROUTES_DEF = {
-  [ROUTES.ROOT]: { to: "/", label: "Home" },
-  [ROUTES.ABOUT]: { to: "/about", label: "About" },
-  [ROUTES.BIZ_SIGNUP]: { to: "/biz-signup", label: "Business Signup" },
-  [ROUTES.LOGOUT]: { to: "/logout", label: "Logout" },
-  [ROUTES.MY_CARDS]: { to: "/my-cards", label: "My Cards" },
-  [ROUTES.MY_FAV_CARDS]: { to: "/my-fav-cards", label: "My Favorite Cards" },
-  [ROUTES.LOGIN]: { to: "/login", label: "Login" },
-  [ROUTES.SIGNUP]: { to: "/signup", label: "Signup" },
-};
-
-export { ROUTES_DEF, ROUTES };
+export { ROUTES };

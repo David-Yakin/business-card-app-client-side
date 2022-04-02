@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import * as PropTypes from "prop-types";
-import { ROUTES_DEF } from "../../../../model/routes";
 
 const NavRouteLink = ({ route }) => {
-  const { to, label } = ROUTES_DEF[route];
+  const { to, label } = route;
   return (
     <li className="nav-item">
       <NavLink className="nav-link" to={to}>
@@ -15,7 +14,7 @@ const NavRouteLink = ({ route }) => {
 };
 
 NavRouteLink.propTypes = {
-  route: PropTypes.string.isRequired,
+  route: PropTypes.object.isRequired,
 };
 
 export default NavRouteLink;

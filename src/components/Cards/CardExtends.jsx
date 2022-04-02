@@ -22,9 +22,8 @@ class CardExtends extends Component {
   };
 
   handleChange = e => {
-    const data = [...this.state.data];
-    let cards = data;
-    const searchTerm = e.target.value;
+    let cards = [...this.state.data];
+    const searchTerm = e.target.value.trim();
     const cardsFiltered = cards.filter(card => {
       return (
         card.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

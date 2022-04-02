@@ -81,7 +81,7 @@ class EditCard extends Form {
         <div className="container">
           <PageHeader
             title="Edit Card"
-            subTitle="Hear you can edit your business card"
+            subTitle="Here you can edit your business card"
           />
           <div className="center">
             <form
