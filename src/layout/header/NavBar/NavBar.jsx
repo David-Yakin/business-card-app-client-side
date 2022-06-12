@@ -3,7 +3,7 @@ import LeftNavigation from "./LeftNavigation";
 import Logo from "./Logo";
 import RightNavigation from "./RightNavigation";
 
-const NavBar = () => {
+const NavBar = ({ user }) => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -11,8 +11,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="col-12 d-flex justify-content-between">
-            <LeftNavigation />
-            <RightNavigation />
+            <LeftNavigation user={user} />
+            <RightNavigation user={user} />
           </Nav>
         </Navbar.Collapse>
       </Container>

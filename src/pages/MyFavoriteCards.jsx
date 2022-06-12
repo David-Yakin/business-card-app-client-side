@@ -26,6 +26,7 @@ class MyFavoriteCards extends CardExtends {
     const cards = [...this.state.cards];
     const { isMounted } = this.state;
     const { user } = this.props;
+
     if (!user) return <Navigate to="/" />;
     if (!isMounted) return <Loader />;
 
